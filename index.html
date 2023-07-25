@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <title>Doctor's Appointment Form</title>
+  </head>
+  
+  <body>
+    <h1><center>Doctor Appointment Form</center></h1>
+    <hr style="height:2px;border-width:0;background-color:red;width:100%;margin-left:0">
+   
+    <table cellspacing="15px">
+      <tr>
+        <td>Appointment Date</td>
+        <td><input type="date" placeholder="dd-mm-yyyy"></td>
+      </tr>
+      
+      <tr>
+        <td>Appointment Time</td>
+        <td><input type="time" name="apptime"></td>
+      </tr>
+    
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="fname" placeholder="First"> &ensp;&ensp;<input type="text" name="lname" placeholder="Last"></td>
+      </tr>
+    
+      <tr>
+        <td>Gender</td>
+        <td>Male <input type="radio" id="male" name="gender"> Female <input type="radio" id="female" name="gender"></td>
+      </tr>
+    
+      <tr>
+        <td>Phone</td>
+        <td><input type="tel" name="phone" placeholder="####"></td>
+      </tr>
+    
+      <tr>
+        <td>Address</td>
+        <td><input type="text" name="city" placeholder="city"> &ensp;&ensp;<input type="text" name="state" placeholder="state"></td>
+      </tr>
+    
+      <tr>
+        <td>Your Query</td>
+        <td><textarea id="query" name="yq" rows="5" cols="35"></textarea></td>
+      </tr>
+   
+      <tr>
+        <td>Appointment Type</td>
+        <td>Select which appointment type(s) you require</td>
+      </tr>
+      
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" name="cc" value="c1"> Cervix checkup<br>
+          <input type="checkbox" name="hc" value="c2"> Heart checkup<br>
+          <input type="checkbox" name="ec" value="c3"> Eye check-up<br>
+          <input type="checkbox" name="ht" value="c4"> Hearing Test<br>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" name="submit" value="Send">
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
